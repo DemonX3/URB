@@ -1,0 +1,77 @@
+v1.2.0 as of .10.2023
+Content:
+- Added 1 golden positive, 1 golden negative, 5 negative and 2 milestone rules.
+
+Changes:
+- Updated to Starsector 0.96a-RC10.
+- 'The Unyielding':
+ - Changes to how rule handles transfer countdown.
+ - Removed jitter.
+ - Added simple effects and sounds for activation and deactivation. Everything is temporary and will be worked on over the course of time. Maybe.
+- 'Dazing Pilotage' duration decreased from 3/5/7/12 to 2/3/5/6. This is to make this negative rule a saner choice. It's still annoying but shouldn't be as fatal as before.
+- 'Deathless' now only replenishes half the values to capital-class ships.
+- Added hullmod blacklist to 'Antagonism'. Added an entire one hullmod to it that doesn't even go nuts at certain conditions when applied to enemy ships by the rule. :crab: SAFETY OVERRIDES ARE GONE! :crab:
+	I'll be filling it up over time if/when people or I myself start encountering crashes or other major problems with various modded hullmods added through this rule.
+	Modders can add to that blacklist on their own account I suppose. Unless hullmod does something mythical there shouldn't be a need for that.
+	Worst case scenario I will reverse it to a whitelist and add a config to enable current behaviour in the future.
+	Observe as I get yelled at for not doing that from beginning in 0.0000014 picoseconds after posting update.
+
+- And perhaps other things that I completely forgot to put here and no longer remember what that was. If I forgot, it wasn't that important, right?
+
+v1.1.2a as of 01.03.2023
+Changes:
+- 'Antagonism' now can add non-smoddable smods. *Beware of Safety Overrides.*
+
+Bugfixes:
+- As a result of said change, fixed 'Antagonism' crash and other potential weird activity with 'Progressive S-Mods' (and similar) mod present.
+
+v1.1.2 as of 01.03.2023
+Changes:
+- 'The Unyielding' now benefits Arma Armatura (and other mods') strikecraft
+- Completely rewrote 'Antagonism':
+ - Now works with all factions equally.
+ - No longer applies 0 and negative OP hullmods.
+ - No longer applies logistic hullmods.
+ - Properly removes gained S-Mods from enemy ships that retreated or left alive when player retreats.
+ - Now works in simulations.
+- Icreased 'Antagonism' S-Mod roll probabilities.
+- Decreased 'Criminal Imperium' effect power and increased it's cost to 4.
+
+Bugfixes:
+- Fixed 'Wish Upon a Star' crash with Nexerelin Task Force disbanding.
+
+v1.1.1 as of 20.02.2023
+Changes:
+- Adjusted 'The Unyielding' jitter. Again.
+- 'The Unyielding' now benefits flagship's modules as well.
+
+Bugfixes:
+- Temporarily stopped 'Antagonism' from working on Blade Breakers to avoid summoning Combat Engine Breakers.
+- Hopefully fixed 'Full Throttle' shenanigans.
+
+v1.1.0 as of 16.02.2023
+Content:
+- Added 6 negative, 1 positive and 1 milestone rules.
+
+Changes:
+- Now depends on MagicLib. I don't suppose there are people who don't have it.
+- Changed 'The Unyielding' jitter into under jitter and increased it's visibility.
+- Changed sound effect and added simple visual effect to 'Deathless' triggering.
+- Adjusted 'Fox' description for clarity.
+
+v1.0.1 as of 12.02.2023
+Changes:
+- 'The Unyielding' no longer counts modules as deployed ships.
+- Adjusted 'The Unyielding' description.
+- Increased 'Mental Warfare' effect power on all difficulties and decreased it's cost by 1. Since rule cost was changed, something may or may not happen to an
+in-progress playthrough with the rule already active.
+- 'Criminal Imperium' now works with governed colonies.
+- Adjusted mod name in modlist. No ID changes were made so I doubt anything will break.
+
+Bugfixes:
+- Fixed 'Mental Warfare' not speeding up PPT drain.
+- Fixed 'Deathless' locking broken weapons from repairing.
+- Fixed 'Wish Upon a Star' increasing terrain CR effect instead of decreasing (:skull:).
+
+v1.0.0 as of 02.02.2023
+- Mod released.

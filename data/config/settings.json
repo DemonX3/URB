@@ -1,0 +1,13 @@
+{
+    "graphics":{
+		"status":{
+            "ungpdx_mimir":"graphics/urb/icons/hullsys/ungpdx_mimir.png",
+		},
+		"vfx":{
+			"ungpdx_fx_circle1":"graphics/urb/effects/ungpdx_circle1.png",
+			"ungpdx_fx_spike1":"graphics/urb/effects/ungpdx_glass_particle.png"
+		}
+    },
+	
+	"URB_antagonism_blacklist": "data/campaign/URB_antagonism_blacklist.csv"
+}

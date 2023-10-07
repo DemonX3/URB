@@ -1,0 +1,7 @@
+id
+#Put IDs of hullmods you don't want to be randomized onto enemies by Antagonism rule.
+#Mostly exists to avoid bothering modders with fixing issues that shouldn't even get surfaced with hullmods that are only available to player normally.
+#Hullmods pass a bunch of checks before they can be added by Antagonism to a ship in following order: Is hullmod applicable? Does hullmod cost more than 0 OP? Is it not a logistic hullmod? Is it not hidden? Is it not hidden everywhere?
+#Only after these checks, if all of them are true, does hullmod count as applicable with Antagonism. If it causes issues or doesn't make sense to be applied even after all that, then hullmod deserves to be blacklisted.
+
+safety_overrides

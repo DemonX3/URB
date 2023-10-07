@@ -1,0 +1,13 @@
+{
+  "id": "demonx3_ungp_rulepack",
+  "name": "Unofficial Rule Book",
+  "author": "DemonX3",
+  "version":"1.2.0",
+  "dependencies": [
+    {"id": "ungp", "name": "Unofficial New Game Plus"},
+	{"id": "MagicLib", "name": "MagicLib"}
+  ],
+  "description": "Ever growing collection of various rules and challenges for UNGP.",
+  "jars": ["jars/Unofficial Rule Book.jar"],
+  "gameVersion": "0.96a-RC10"
+}

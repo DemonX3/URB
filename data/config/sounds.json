@@ -1,0 +1,22 @@
+{
+	"deathless_reincarnate":{
+		"sounds":[
+			{"file":"sounds/effects/deathless.ogg","pitch":1,"volume":0.5},
+		],
+	},
+	"unyielding_activate":{
+		"sounds":[
+			{"file":"sounds/effects/unyielding_activate.ogg","pitch":1,"volume":0.5},
+		],
+	},
+	"unyielding_deactivate":{
+		"sounds":[
+			{"file":"sounds/effects/unyielding_deactivate.ogg","pitch":1,"volume":0.4},
+		],
+	},
+	"doomslayer_stress":{
+		"sounds":[
+			{"file":"sounds/effects/phase_stress.ogg","pitch":1,"volume":0.4},
+		],
+	}
+}

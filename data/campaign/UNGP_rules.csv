@@ -1,0 +1,73 @@
+id,name,short,desc,cost,isBonus,isGolden,spritePath,effectPlugin,extra1,extra2,source,tags,spriteAuthor
+#dx3_rule,Rule,Something something,"Big fat rule does %s, %s and %s.",0,FALSE,FALSE,graphics/urb/icons/ungp/placeholder.png,data.scripts.ungprules.impl.combat.UNGPDX_Rule,,,"[URB] - ""This rules.""",,Who?
+,,,,,,,,,,,,,
+# Negative Rules,,,,,,,,,,,,,
+# Character,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Combat,,,,,,,,,,,,,
+dx3_prosperous_forging,Antagonism,Hostile S-Mods,Every enemy ship has %s chance to have a random S-Mod from it's Faction pool for the duration of combat. There is a %s chance to roll for up to %s additional S-Mods after first one.,3,FALSE,FALSE,graphics/urb/icons/ungp/prosperous_forging.png,data.scripts.ungprules.impl.combat.UNGPDX_ProsperousForging,,,"[URB] - ""We all know your story, guy. You go there, do this, personally supervise ship modification and roll with it. Now let me tell you my story. If you are willing to listen, listen well. Or else you might regret this.""",,DemonX3
+dx3_wartime_warcrime,War Time War Crime,Increase crew loss from hull damage,Increases crew casualties in combat through hull damage by %s.,2,FALSE,FALSE,graphics/urb/icons/ungp/wartime_warcrime.png,data.scripts.ungprules.impl.combat.UNGPDX_WarTimeWarCrime,,,"[URB] - ""Geneva Convention? Geneva Suggestion!""",,DemonX3
+dx3_skeleton_king,Deathless,Enemies cheat death,"Upon taking fatal damage, enemy destroyers and cruisers will instantly fully recover %s a combat. It will recover all its %s. Flux capacitors will be %s. Ship's PPT will be %s, if any remained. Flagship and certain ships will benefit regardless of size. Capital ships only gain half the replenishments.",5,FALSE,FALSE,graphics/urb/icons/ungp/skeleton_king.png,data.scripts.ungprules.impl.combat.UNGPDX_SkeletonKing,,,"[URB] - ""I shall endure a thousand deaths before I yield.""",,DemonX3
+dx3_dazing_pilotage,Dazing Pilotage,Allied crew is sleepy,"For each player and allied ship, every %s second there is a %s chance to lose ship control for %s seconds (based on hull size).",4,FALSE,FALSE,graphics/urb/icons/ungp/dazing_pilotage.png,data.scripts.ungprules.impl.combat.UNGPDX_DazingPilotage,,,"[URB] - ""You know, I really could go for some coffee.""",,DemonX3
+dx3_blight,Blight,Armor constantly corrodes,"All player and allied ships lose %s of armor every second until it is %s or %s of maximum, whichever is lower.",4,FALSE,FALSE,graphics/urb/icons/ungp/blight.png,data.scripts.ungprules.impl.combat.UNGPDX_Blight,,,"[URB] - ""This vessel is rotten to the core.""",,DemonX3
+dx3_mirage,Mirage,Faulty phase sensors,Enemy phase ships gain %s and %s when phased.,1,FALSE,FALSE,graphics/urb/icons/ungp/mirage.png,data.scripts.ungprules.impl.combat.UNGPDX_Mirage,,,"[URB] - ""I can hear it whispering. It is always close, breathing right onto your back.""",,DemonX3
+,,,,,,,,,,,,,
+# Economy,,,,,,,,,,,,,
+dx3_crisis_binding,Grief of Demeter,Planetary meltdown,Increases hazard rating of all player colonies by %s.,4,FALSE,FALSE,graphics/urb/icons/ungp/demeter.png,data.scripts.ungprules.impl.economy.UNGPDX_ColonySuffering,,,"[URB] - ""The land withered and became infertile, as her grief and anger caused the crops to fail and the world to plunge into a perpetual winter.""",,DemonX3
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Fleet,,,,,,,,,,,,,
+dx3_pestilence,Pestilence,Mothballed ships put strain on the fleet,"For each mothballed ship, decrease fleet's CR by %s.",1,FALSE,FALSE,graphics/urb/icons/ungp/pestilence.png,data.scripts.ungprules.impl.fleet.UNGPDX_Pestilence,,,"[URB] - ""I tell you, Captain. All these unpowered ships just strain our fleet, can we get their engines going?""",,DemonX3
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Member,,,,,,,,,,,,,
+dx3_scary_dmod,Reaper's Tax,Severe D-Mods,Effect of D-Mods is increased by %s.,2,FALSE,FALSE,graphics/urb/icons/ungp/reapers_tax.png,data.scripts.ungprules.impl.member.UNGPDX_ScaryDmod,,,"[URB] - ""One day you are in perfect health, ready to battle. The next day you cannot feel your spine, ribs shattered and skin burnt. Such is life.""",,DemonX3
+dx3_more_dmod,Brittle Framing,Fragile ship debris and lots of D-Mods,Disabled player ships are %s more probable to be destroyed and are %s more prone to gain new D-Mods.,3,FALSE,FALSE,graphics/urb/icons/ungp/brittle_framing.png,data.scripts.ungprules.impl.member.UNGPDX_MoreDmod,,,"[URB] - ""Perhaps telling that pirate to 'off themselves was not so ingenuous of a move.""",,DemonX3
+dx3_thin_insulator,Thin Insulator,Longer overloads,Increase overload duration of all allied and player ships by %s.,1,FALSE,FALSE,graphics/urb/icons/ungp/thin_insulator.png,data.scripts.ungprules.impl.member.UNGPDX_ThinInsulator,,,"[URB] - ""'I may have failed to resist the indomitable urge to coat flux conduit array in maple syrup.' - John Autofit, Nachiketa Dry Dock Engineer, as he is taken into custody by the IRS, c208.""",,DemonX3
+,,,,,,,,,,,,,
+# Other,,,,,,,,,,,,,
+#dx3_debtstacking,Financial Obligation WIP,Debts should be paid,"At the end of month, unpaid debts take additional %s or %s credits, whichever is lower.",1,FALSE,FALSE,graphics/urb/icons/ungp/debtstacking.png,data.scripts.ungprules.impl.other.UNGPDX_FinancialObligation,Your debt has taken additional %s star coins from you.,,"[URB] - ""You have a month. Otherwise...""",,DemonX3
+dx3_famine,Famine,Crew must be fed,"Every crewmember and marine consumes %s and %s food monthly. If food is unavailable at the end of month, %s of total crew will starve to death and leave some organs behind. At least one unit of food is required regardless.",2,FALSE,FALSE,graphics/urb/icons/ungp/famine.png,data.scripts.ungprules.impl.other.UNGPDX_Famine,Your crew has consumed %s food this month.,"Due to lack of food, %s crew and %s marines have starved to death and left %s organs.","[URB] - ""Hey! This supply box' food compartment is empty!""",,DemonX3
+dx3_spxpdebuff,Same Old Story,Bonus XP deteriorates over time,"Every day, lose %s of accumulated bonus XP.",1,FALSE,FALSE,graphics/urb/icons/ungp/spxpdebuff.png,data.scripts.ungprules.impl.other.UNGPDX_SPXPDebuff,,,"[URB] - ""'This story is about a starfarer from Gala-' 'Oi, you've been telling this story every day for the past 4 months.'""",,DemonX3
+dx3_golden_binding,Greed of Midas,Golden meltdown,%s,4,FALSE,TRUE,graphics/urb/icons/ungp/midas.png,data.scripts.ungprules.impl.other.UNGPDX_EmptyRuleLmao,,,"[URB] - ""Then he understood that this gift was a bane and in his loathing for gold, cursed his prayer.""",no_roll,DemonX3
+,,,,,,,,,,,,,
+# Milestone,,,,,,,,,,,,,
+#dx3_artifact_of_evolution,Evolution,Hostile ships scale with time,Every %s seconds there is a %s chance for each enemy ship to gain random increased performance by %s.,7,FALSE,FALSE,graphics/urb/icons/ungp/milestones/artifact_of_evolution.png,data.scripts.ungprules.impl.combat.UNGPDX_ArtifactOfEvolution,,,"[URB] - ""The clock is ticking.""",,DemonX3
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Positive Rules,,,,,,,,,,,,,
+# Character,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Combat,,,,,,,,,,,,,
+dx3_mental_warfare,Mental Warfare,Enemy ships lose PPT and CR faster,Increases enemy PPT and CR degradation rate by %s.,-2,TRUE,FALSE,graphics/urb/icons/ungp/mental_warfare.png,data.scripts.ungprules.impl.combat.UNGPDX_MentalWarfare,,,"[URB] - ""Be smart, not strong.""",,DemonX3
+dx3_full_throttle,Full Throttle,Full-speed ships weight more,Ships at and above %s speed have %s more mass without penalties to maneurability.,-1,TRUE,FALSE,graphics/urb/icons/ungp/full_throttle.png,data.scripts.ungprules.impl.combat.UNGPDX_FullThrottle,,,"[URB] - ""Ramming speed!""",,DemonX3
+,,,,,,,,,,,,,
+# Economy,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Fleet,,,,,,,,,,,,,
+dx3_fox,Fox,Stay still to hide from danger,"After being still for %s days, decrease ships' sensor profile and increase sensor range by a factor of %s.",-2,TRUE,FALSE,graphics/urb/icons/ungp/fox.png,data.scripts.ungprules.impl.fleet.UNGPDX_Fox,HIDING...,,"[URB] - ""They were sour anyway.""",,DemonX3
+#dx3_warhunger,Battle Trance,"War takes no rest, keep fighting.","Upon emerging victorious from battle, for %s days increase fleet repair and CR recovery speed by %s and decrease CR cost per deployment by %s. Subsequent victories refresh duration and stack effect. This effect caps at %s stacks. Defeat nulls all stacks.",-4,TRUE,FALSE,graphics/urb/icons/ungp/placeholder.png,,Triumph of your battles will last for another %s days.,"Triumph of your battles has subsided, and the crew morale returned to normal.","[URB] - """"",,DemonX3
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Member,,,,,,,,,,,,,
+dx3_wish_upon_a_star,Wish Upon a Star,Improved performance around stars and black holes,"While in star corona or event horizon, increase maneurability by %s, top speed by %s (based on hull size) and decrease terrain CR degradation by %s.",-2,TRUE,FALSE,graphics/urb/icons/ungp/wish_upon_a_star.png,data.scripts.ungprules.impl.member.UNGPDX_WishUponAStar,,,"[URB] - ""I wish my fleet didn't implode the second battle in corona starts...""",,DemonX3
+dx3_hyperspatial_drifter,Hyperspace Drifter,Increased burn level,Increase player fleet's base burn level by %s.,-1,TRUE,FALSE,graphics/urb/icons/ungp/hyperspatial_drifter.png,data.scripts.ungprules.impl.member.UNGPDX_HyperspatialDrifter,,,"[URB] - ""Last ride.""",,DemonX3
+dx3_mss_garuda,MSS Garuda,Increase the performance of Flagship: Conquest,"When the flagship is a Conquest series ship, the ship gains %s system CDR, active venting rate and %s weapon range. %s max combat readiness.",-4,TRUE,TRUE,graphics/urb/icons/ungp/mss_garuda.png,data.scripts.ungprules.impl.member.UNGPDX_MssGaruda,Conquests in game:,,"[URB] - ""We are at your command, Captain.""",,DemonX3
+,,,,,,,,,,,,,
+# Other,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+# Milestone,,,,,,,,,,,,,
+dx3_the_unyielding,The Unyielding,Lone Admiral's last stand,"Flagship's flux grid is improved by %s, it's hull regenerates up to %s by %s and it's PPT does not degrade so long as no other player ships are present. Switching command from one ship to another disables this effect for %s seconds.",-6,TRUE,TRUE,graphics/urb/icons/ungp/milestones/the_unyielding.png,data.scripts.ungprules.impl.combat.UNGPDX_TheUnyielding,,,"[URB] - ""This vessel will not move an inch out of this combat space...""",milestone,DemonX3
+dx3_criminal_imperium,Criminal Imperium,Monopoly,Player colonies with Free Port status decrease access of hostile colonies in the %s range by %s.,-4,TRUE,FALSE,graphics/urb/icons/ungp/milestones/criminal_imperium.png,data.scripts.ungprules.impl.economy.UNGPDX_CriminalImperium,,,"[URB] - ""Competition is a joke.""",milestone,DemonX3
+dx3_weeping_fungus,Weeping Fungus,Lower maintenance cost while maintaining course,"After maintaining velocity over %s burn for %s day(s), ships' repair speed +%s, maintenance -%s",-1,TRUE,FALSE,graphics/urb/icons/ungp/milestones/weeping_fungus.png,data.scripts.ungprules.impl.fleet.UNGPDX_WeepingFungus,QUICKFITTING NOW...,,"[URB] - ""We are the mucus.""",milestone,DemonX3
+dx3_picture_perfect,Picture Perfect,Increased max S-Mods,Increase maximum S-Mods per ship by %s.,-4,TRUE,FALSE,graphics/urb/icons/ungp/milestones/picture_perfect.png,data.scripts.ungprules.impl.member.UNGPDX_PicturePerfect,,,"[URB] - ""Say cheese, badass!""",milestone,DemonX3
+dx3_doomslayer,Doomslayer,"Flagship instills fear, especially into phase demons",Enemy ships within %s from flagship lose %s of their maneurability and %s of flux dissipation. Enemy phase ships have their phase upkeep increased by a factor of %s and lose additional %s maneurability and %s flux dissipation,-3,TRUE,FALSE,graphics/urb/icons/ungp/milestones/doomslayer.png,data.scripts.ungprules.impl.combat.UNGPDX_Doomslayer,,,"[URB] - ""The only thing they fear is You.""",milestone,DemonX3
+dx3_metalize,Metalize,"Take pride in D-Mods, gaining benefits from them","Every D-Mod on a given ship increases ship's terrain resistance by %s, calculation armor by %s, weapon repair speed by %s, weapon durability by %s, engine repair speed by %s, engine durability by %s, decreases weapon flux costs by %s and decreases effect of all D-Mods by %s.",-3,TRUE,FALSE,graphics/urb/icons/ungp/milestones/metalize.png,data.scripts.ungprules.impl.member.UNGPDX_Metalize,,,"[URB] - ""This is nothing compared to my old scars!""",milestone,DemonX3
+,,,,,,,,,,,,,

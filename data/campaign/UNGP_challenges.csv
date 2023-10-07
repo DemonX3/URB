@@ -1,0 +1,7 @@
+id,name,rulesRequired,positiveLimitation,durationByMonth,needMaxLevel,canReselectRules,milestoneToUnlock
+weeping_captain,Fungal Diet,"bustling_fungus, low_repairtech",1,-1,TRUE,FALSE,dx3_weeping_fungus
+faction_cancelled,Faction status: Cancelled,"trade_embargo, spy",-1,-1,TRUE,FALSE,dx3_criminal_imperium
+for_i_am_the_legion,"...For ""I"" am the Legion","disarmament_agreement, blood_lust, low_interchangeability, dx3_wartime_warcrime, dx3_skeleton_king",2,-1,TRUE,FALSE,dx3_the_unyielding
+well_mannered_listener,Well Mannered Listener,"monotonous_teller, dx3_prosperous_forging",-1,-1,TRUE,FALSE,dx3_picture_perfect
+doomsday,Doomsday Party,"phasing_ghost, explosive_sniper, dx3_mirage, dx3_dazing_pilotage",5,-1,TRUE,FALSE,dx3_doomslayer
+junkyard_baron,Junkyard Baron's Curse,"blocked_flux_conduits, fragment_graveyard, dx3_more_dmod, dx3_scary_dmod",-1,-1,TRUE,FALSE,dx3_metalize
