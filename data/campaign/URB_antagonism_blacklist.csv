@@ -5,3 +5,4 @@ id
 #Only after these checks, if all of them are true, does hullmod count as applicable with Antagonism. If it causes issues or doesn't make sense to be applied even after all that, then hullmod deserves to be blacklisted.
 
 safety_overrides
+acs_frigate_on_hangar
