@@ -5,6 +5,8 @@ import com.fs.starfarer.api.campaign.FactionAPI;
 import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.listeners.AdvanceableListener;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.impl.campaign.DModManager;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -97,7 +99,7 @@ public class UNGPDX_ProsperousForging extends UNGP_BaseRuleEffect implements UNG
         }
 
         public boolean hullmodCheck(String modID, ShipAPI ship) {
-            boolean applicable = false;
+            boolean applicable = true;
             if (modID == null) return false;
             mod = Global.getSettings().getHullModSpec(modID);
 
@@ -113,13 +115,13 @@ public class UNGPDX_ProsperousForging extends UNGP_BaseRuleEffect implements UNG
                 logC.info(mod.getDisplayName() + " is hidden everywhere.");
             }*/
 
-            if (mod.getEffect().isApplicableToShip(ship)
-                    && mod.getCostFor(ship.getHullSize()) > 0
-                    && !mod.getUITags().contains("Logistics")
-                    && !mod.isHidden()
-                    && !mod.isHiddenEverywhere()
-                    && !blacklist.contains(mod.getId())) {
-                applicable = true;
+            if (blacklist.contains(mod.getId())
+                    || mod.getCostFor(ship.getHullSize()) == 0
+                    || mod.getUITags().contains("Logistics")
+                    || mod.isHidden()
+                    || mod.isHiddenEverywhere()
+                    || !mod.getEffect().isApplicableToShip(ship)) {
+                applicable = false;
             }
             return applicable;
         }
@@ -166,7 +168,7 @@ public class UNGPDX_ProsperousForging extends UNGP_BaseRuleEffect implements UNG
         }
 
         public void advance(float amount) {
-            if(engine.isPaused()) return;
+            if (engine.isPaused()) return;
 
             if (ship.getFleetMember() != null) {
                 if (ship.getFleetMember().getFleetCommander() != null) {

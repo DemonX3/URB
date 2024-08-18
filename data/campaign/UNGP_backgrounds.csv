@@ -1,0 +1,3 @@
+id,order,name,short,desc,spritePath,effectPlugin,extra1,extra2,source,tags,note
+#nothing,0.01,Nothing,"You seem to have experienced life several times in your dreams, but that's about it.",,graphics/ungp/icons/ungp_backgrounds/nothing.png,ungp.impl.backgrounds.UNGP_Nothing,,,,,
+ancientai,1.01,Ancient AI,"Remorseless machine mind from aeons ago reawakened by poor tech-miner, their ego dominated by that of your own.",,graphics/urb/icons/backgrounds/ancientai.png,data.scripts.ungprules.impl.backgrounds.UNGPDX_AncientAI,,,[URB],,

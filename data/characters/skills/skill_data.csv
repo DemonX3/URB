@@ -1,0 +1,3 @@
+id,name,order,tier,reqPoints,reqPointsPerExtraSkill,description,author,combat officer,admiral,admin,tags,icon,
+# URB,,,,,,,,,,,,,
+dx3_centuriesuntold,Centuries Untold; Unearthed,10,1,0,,[ARCHIVE.CONNECTION:LACKING; DATA:CORRUPTED; NEW.DIRECTIVE:RECOVER.RUINED.FACILITIES; RETURN.TO.ARCHIVE],[SUBJECT:EXISTENTIAL.MEANING],,TRUE,TRUE,"player_only, npc_only",graphics/urb/icons/skills/centuriesuntold.png,

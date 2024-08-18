@@ -1,4 +1,17 @@
-v1.2.0 as of .10.2023
+v1.3.0 as of 18.08.2024
+Content:
+- Added 3 negative rules.
+- Added 1 background.
+
+Changes:
+- Updated mod to Starsector 0.97
+- 'Antagonizm':
+ - Moved blacklist check up in priority.
+ - Added 'Stored Frigate' hullmod from 'Indies Expansion' (or 'Aerial Combat Suite', whatever) to the blacklist.
+- Moved 'Thin Insulator' rule to combat layer.
+- Temporarily disabled visual range circle of 'Doomslayer', it still works.
+
+v1.2.0 as of 07.10.2023
 Content:
 - Added 1 golden positive, 1 golden negative, 5 negative and 2 milestone rules.
 

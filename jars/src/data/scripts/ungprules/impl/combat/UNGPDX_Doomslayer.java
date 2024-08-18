@@ -85,23 +85,27 @@ public class UNGPDX_Doomslayer extends UNGP_BaseRuleEffect implements UNGP_Comba
         if (!playerShip.isAlive()) return;
 
         List<ShipAPI> shipsInRange = CombatUtils.getShipsWithinRange(playerShip.getLocation(), auraRange);
-        List<ShipAPI> shipsAlmostInRange = getShipsInRangeByList(enemies, playerShip, auraRange + 500f);
+        //List<ShipAPI> shipsAlmostInRange = getShipsInRangeByList(enemies, playerShip, auraRange + 500f);
 
-        if (!playerShip.getCustomData().containsKey("doomslayer_aura")) {
-            p.color = Misc.setAlpha(color, 125);
-            p.ship = playerShip;
-            p.radius = auraRange;
-            AuraCircleAttemptOne plugin = new AuraCircleAttemptOne(p);
-            Global.getCombatEngine().addLayeredRenderingPlugin(plugin);
-            playerShip.setCustomData("doomslayer_aura", plugin);
-        } else if (playerShip.getCustomData().containsKey("doomslayer_aura")) {
-            AuraCircleAttemptOne visual = (AuraCircleAttemptOne) playerShip.getCustomData().get("doomslayer_aura");
-            if (shipsAlmostInRange.size() == 0) {
-                visual.p.baseAlpha = 125;
-            } else {
-                visual.p.baseAlpha = 255;
+        /*for (ShipAPI ship : getShipsOfSide(FleetSide.PLAYER, false)) {
+            if (ship != playerShip && ship.getCustomData().containsKey("doomslayer_aura")) {
+                ship.removeCustomData("doomslayer_aura");
+            } else if (ship == playerShip && !ship.getCustomData().containsKey("doomslayer_aura") ) {
+                p.color = Misc.setAlpha(color, 125);
+                p.ship = ship;
+                p.radius = auraRange;
+                AuraCircleAttemptOne plugin = new AuraCircleAttemptOne(p);
+                Global.getCombatEngine().addLayeredRenderingPlugin(plugin);
+                ship.setCustomData("doomslayer_aura", plugin);
+            } else if (ship.getCustomData().containsKey("doomslayer_aura")) {
+                AuraCircleAttemptOne visual = (AuraCircleAttemptOne) ship.getCustomData().get("doomslayer_aura");
+                if (shipsAlmostInRange.size() == 0) {
+                    visual.p.baseAlpha = 125;
+                } else {
+                    visual.p.baseAlpha = 255;
+                }
             }
-        }
+        }*/
 
         for (ShipAPI e : enemies) {
             if (e == null) return;

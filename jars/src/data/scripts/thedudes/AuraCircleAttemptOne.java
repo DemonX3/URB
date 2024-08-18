@@ -12,7 +12,7 @@ import java.awt.Color;
 import java.util.EnumSet;
 import org.lwjgl.opengl.GL11;
 
-// racoon don't hire hitmen to eliminate me please i swear i'll learn how this rendering stuff truly works so i can write the exact same thing in a different way
+// racoon don't hire hitmen to eliminate me please i swear i'll learn how this rendering stuff actually works so i can write the exact same thing in a different way
 
 public class AuraCircleAttemptOne extends BaseCombatLayeredRenderingPlugin {
     protected SpriteAPI atmosphereTex;

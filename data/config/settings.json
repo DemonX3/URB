@@ -6,7 +6,11 @@
 		"vfx":{
 			"ungpdx_fx_circle1":"graphics/urb/effects/ungpdx_circle1.png",
 			"ungpdx_fx_spike1":"graphics/urb/effects/ungpdx_glass_particle.png"
-		}
+		},
+		"blueprint_packages":{
+			"dx3_derelict_bp_package":"graphics/factions/domain_explorarium.png",
+			"dx3_remnant_bp_package":"graphics/factions/ai_remnant.png",
+		},
     },
 	
 	"URB_antagonism_blacklist": "data/campaign/URB_antagonism_blacklist.csv"
